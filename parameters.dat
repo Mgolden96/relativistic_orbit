@@ -1,0 +1,22 @@
+radius		    7.0
+dr/dtau         0.035
+use_circular	1
+dtheta/dtau     0
+max_tau         1000
+dtau            0.01
+every           100
+
+These conditions give an interesting and stable orbit.
+
+radius, dr/dtau, dtheta/dtau are self explanitory
+
+use_circular (if set to 1) fixes dtheta/dtau so that the orbit will be circular.
+    It still allows you to change dr/dtau to perturb circular orbits.
+    Any input dtheta/dtau will be ignored unless use_circular != 1
+
+max_tau is the end proper time of the simulation
+
+dtau is the timestep
+
+every detemrines how often the system is written to a file.
+    if every = 100, then every 100 timesteps the system will be recorded.
